@@ -1,0 +1,46 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6 center-block">
+            <h1>EDIT</h1>
+
+            <form method="POST" role="form">
+                <legend>Book details:</legend>
+
+                <div class="form-group">
+                    <label for="bookName">Name:</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-book"></span>
+                        </div>
+                        <input type="text" class="form-control" id="bookName" name="bookName" placeholder="Enter book name" value="{{book.name}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bookISBN">ISBN:</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-list-alt"></span>
+                        </div>
+                        <input type="text" class="form-control" id="bookISBN" name="bookISBN" placeholder="Enter book ISBN" value="{{book.isbn}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bookPrice">Price:</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-usd"></span>
+                        </div>
+                        <input type="text" class="form-control" id="bookPrice" name="bookPrice" placeholder="Enter book price" value="{{book.price}}">
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">Save</button> | <button type="reset" class="btn btn-danger">Reset</button>
+            </form>
+        </div>
+
+    </div>
+
+
+</div>
